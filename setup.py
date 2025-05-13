@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'lab5'
+package_name = 'ros2_project_sc21ao'
 
 setup(
     name=package_name,
@@ -15,15 +15,16 @@ setup(
     zip_safe=True,
     maintainer='cscajb',
     maintainer_email='x.wang16@leeds.ac.uk',
-    description='TODO: Package description',
+    description='ROS2 Project for RGB Detection and Motion Planning',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'first_step = lab5.first_step:main',
-            'second_step = lab5.second_step:main',
-            'third_step = lab5.third_step:main',
-            'fourth_step = lab5.fourth_step:main',
+            'first_step = ros2_project_sc21ao.first_step:main',
+            'second_step = ros2_project_sc21ao.second_step:main',
+            'third_step = ros2_project_sc21ao.third_step:main',
+            'fourth_step = ros2_project_sc21ao.fourth_step:main',
+            'robot_task = ros2_project_sc21ao.robot_task:main',  # Registering robot_task.py here
         ],
     },
 )
